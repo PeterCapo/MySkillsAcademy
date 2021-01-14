@@ -1,0 +1,314 @@
+body {
+    padding: 50px;
+    background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/tiny_grid.png");
+}
+
+.header-panel {
+    margin-bottom: 25px;
+}
+
+.name {
+    display: inline-block;
+}
+
+.dropdown,
+.saved-search {
+    display: inline-block;
+}
+
+html {
+    box-sizing: border-box;
+    width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.topnav {
+    width: 20vw;
+    height: 20vh;
+    background: linear-gradient(60deg, #1900fa, #616bff);
+    background: white;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 20rem;
+    overflow: hidden;
+}
+
+.main-container {
+    min-height: 100vh;
+    /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px;
+    color: #312eff;
+    /* height of your footer */
+}
+
+ :root {
+    --z24: translateZ(24.5px);
+    --z80: translateZ(80px);
+    --ts: all .5s ease;
+    --x90: rotateX(90deg);
+    --xm90: rotateX(-90deg);
+    --y90: rotateY(90deg);
+    --ym90: rotateY(-90deg);
+}
+
+nav {
+    width: 100%;
+    padding: 16px 16px 0 16px;
+    position: absolute;
+}
+
+ol {
+    width: 150%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main-navigation {
+    margin-top: auto;
+    width: 20%;
+    margin-left: 20px;
+    position: relative;
+}
+
+.main-menu {
+    display: flex;
+    position: relative;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+li {
+    width: 160px;
+    position: relative;
+    cursor: pointer;
+}
+
+li span {
+    width: 100%;
+    height: 49px;
+    display: block;
+    position: relative;
+    transition: var(--ts);
+    transform-style: preserve-3d;
+}
+
+li span::before,
+li span::after {
+    width: 100%;
+    padding: 16px 0;
+    display: block;
+    position: absolute;
+    border-radius: 8px;
+    font: 400 14px "Consolas";
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-item:nth-of-type(2),
+.main-item:nth-of-type(3),
+.main-item:nth-of-type(4),
+.main-item:nth-of-type(5) {
+    margin: 0 2px;
+}
+
+.main-item:nth-of-type(5)::before {
+    width: 100%;
+    top: 25px;
+    display: block;
+    position: absolute;
+    color: rgb(255, 254, 254);
+    font: 400 24px "Consolas";
+    text-align: center;
+    transition: var(--ts);
+    z-index: 100;
+    content: "▾";
+}
+
+.main-item:hover>span {
+    transform: var(--x90);
+}
+
+.main-item>span::before {
+    background: #002235;
+    color: #fff;
+    transform: var(--z24);
+    box-shadow: 0 8px 6px -6px #888;
+}
+
+.main-item>span::after {
+    background: #fcfffe;
+    transform: var(--xm90) var(--z24);
+}
+
+.Dashboard::before,
+.Dashboard::after {
+    content: "Dashboard";
+}
+
+.Training::before,
+.Training::after {
+    content: "Book Training";
+}
+
+.Talent-Pool::before,
+.Talent-Pool::after {
+    content: "Talent Pool";
+}
+
+.Account::before,
+.Account::after {
+    content: "Account";
+}
+
+.orders::before,
+.orders::after {
+    content: "Order Summary";
+}
+
+.sub-menu {
+    top: 51px;
+    display: none;
+    position: absolute;
+}
+
+.sub-menu li {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.sub-menu li:nth-of-type(2) {
+    margin: 2px 0;
+}
+
+.sub-item:nth-of-type(1) {
+    -webkit-animation: fade 0.5s ease 0.2s both;
+    animation: fade 0.5s ease 0.2s both;
+}
+
+.sub-item:nth-of-type(2) {
+    -webkit-animation: fade 0.5s ease 0.4s both;
+    animation: fade 0.5s ease 0.4s both;
+}
+
+.sub-item:nth-of-type(3) {
+    -webkit-animation: fade 0.5s ease 0.6s both;
+    animation: fade 0.5s ease 0.6s both;
+}
+
+.sub-item:nth-of-type(4) {
+    -webkit-animation: fade 0.5s ease 0.6s both;
+    animation: fade 0.5s ease 0.6s both;
+}
+
+@-webkit-keyframes fade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sub-item span::before {
+    background: #002235;
+    color: #fff;
+    transform: var(--z80);
+}
+
+.sub-item span::after {
+    background: #00a6bc;
+    color: #fff;
+}
+
+.item-left:hover span {
+    transform: var(--y90);
+}
+
+.item-left span::after {
+    transform: var(--ym90) var(--z80);
+}
+
+.item-right:hover span {
+    transform: var(--ym90);
+}
+
+.item-right span::after {
+    transform: var(--y90) var(--z80);
+}
+
+.small::before,
+.small::after {
+    content: "small widgets";
+}
+
+.standart::before,
+.standart::after {
+    content: "standart widgets";
+}
+
+.big::before,
+.big::after {
+    content: "big widgets";
+}
+
+.premium::before,
+.premium::after {
+    content: "Account Settings";
+}
+
+.combo::before,
+.combo::after {
+    content: "Contact Us";
+}
+
+.special::before,
+.special::after {
+    content: "Log Out";
+}
+
+.main-item:nth-of-type(5):hover::before {
+    color: rgb(248, 247, 247);
+    content: "▴";
+}
+
+.main-item:nth-of-type(5):hover .sub-menu {
+    display: block;
+}
+
+@media screen and (min-width: 321px) and (max-width: 839px) {
+    nav {
+        width: 320px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 839px) {
+    .main-item:nth-of-type(2),
+    .main-item:nth-of-type(3),
+    .main-item:nth-of-type(4) {
+        margin: 3px 0;
+    }
+    .sub-menu {
+        position: relative;
+        top: 1px;
+        padding: 2px 0 1px 0;
+    }
+    .sub-menu li span::before {
+        transform: var(--z24);
+    }
+    .sub-menu li span::after {
+        transform: rotateY(0deg) var(--x90) var(--z24);
+    }
+    .sub-menu li:hover span {
+        transform: var(--xm90);
+    }
+}
