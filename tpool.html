@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Talent Pool</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Peter Hasero">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/images/myskillslogoxs.jpg">
+    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="./assets/css/tpool.css" />
+
+</head>
+
+<body>
+    <div class="topnav">
+        <div class="main-navigation">
+            <a href="dashboard.html"><img src="./assets/images/myskillslogo.png" style="height: 70px; float: left;" alt="Logo"></a>
+        </div>
+        <nav>
+            <ol class="main-menu">
+                <li class="main-item" onclick="location.href='./dashboard.html';"><span class="Dashboard"></span></li>
+                <li class="main-item" onclick="location.href='./book.html';"><span class="Training"></span></li>
+                <li class="main-item" onclick="location.href='./tpool.html';"><span class="Talent-Pool"></span></li>
+                <li class="main-item" onclick="location.href='./accounts.html';"><span class="orders"></span></li>
+                <li class="main-item"><span class="Account "></span>
+                    <ol class="sub-menu ">
+                        <li class="sub-item item-right "><span class="premium "></span></li>
+                        <li class="sub-item item-right " onclick="location.href='./contact.html';"><span class="combo "></span></li>
+                        <li class="sub-item item-right " onclick="location.href='./login2.html';"><span class="special "></span></li>
+                    </ol>
+                </li>
+            </ol>
+        </nav>
+    </div>
+</body>
+
+<body ng-app="app" ng-controller="AppCtrl as app">
+    <div claas="app">
+        <div class="row header-panel">
+            <div class="col-md-2 col-sm-2" style="margin-top:65px;">
+                <button type="button" class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Talent pools
+          <span class="caret"></span>
+        </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">All candidates</a></li>
+                    <li><a href="#">Referrals</a></li>
+                    <li><a href="#">Design Campaign</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Snooze</a></li>
+                </ul>
+            </div>
+            <div class="col-md-8 col-sm-8" style="margin-top:65px;">
+                <input type="text" class="btn btn-block dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" border-width: 1px; border-style: solid; border-color: black;" />
+            </div>
+            <div class="col-md-2 col-sm-2" style="margin-top:65px;">
+                <button type="button" class="btn btn-success btn-block" style="background-color: #002235;">Search</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-sm-2">
+                <div class="panel-group " id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  + Age 
+                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li><input type="checkbox"> Example 1</li>
+                                    <li><input type="checkbox"> Example 2</li>
+                                    <li><input type="checkbox"> Example 3</li>
+                                    <li><input type="checkbox"> Example 4</li>
+                                    <li><a href="#">+ Add </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  + Location
+                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li><input type="checkbox"> Example 1</li>
+                                    <li><input type="checkbox"> Example 2</li>
+                                    <li><input type="checkbox"> Example 3</li>
+                                    <li><input type="checkbox"> Example 4</li>
+                                    <li><a href="#">+ Add </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  + Experience Level
+                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li><input type="checkbox"> Example 1</li>
+                                    <li><input type="checkbox"> Example 2</li>
+                                    <li><input type="checkbox"> Example 3</li>
+                                    <li><input type="checkbox"> Example 4</li>
+                                    <li><a href="#">+ Add </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                  + Job Title
+                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li><input type="checkbox"> Example 1</li>
+                                    <li><input type="checkbox"> Example 2</li>
+                                    <li><input type="checkbox"> Example 3</li>
+                                    <li><input type="checkbox"> Example 4</li>
+                                    <li><a href="#">+ Add </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  + Education
+                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li><input type="checkbox"> Example 1</li>
+                                    <li><input type="checkbox"> Example 2</li>
+                                    <li><input type="checkbox"> Example 3</li>
+                                    <li><input type="checkbox"> Example 4</li>
+                                    <li><a href="#">+ Add </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSix">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                  + Status
+                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                            <div class="panel-body">
+                                todo
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="btn-toolbar" role="toolbar" aria-label="...">
+                    <div class="btn-group" role="group" aria-label="...">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <input type="checkbox"> Select
+                <span class="caret"></span>
+              </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#"><strong>All</strong></a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button type="button" id="dropdownMenu2" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon glyphicon-th-list" </span>
+                  <span class="caret"></span>
+              </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><a href="#">Assign to a job</a></li>
+                                <li><a href="#">Add to talent pool</a></li>
+                                <li><a href="#">More actions ...</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Sort by
+                <span class="caret"></span>
+              </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                                <li><a href="#">Activity</a></li>
+                                <li><a href="#">Rating</a></li>
+                            </ul>
+                        </div>
+                        <div class="saved-search">
+                            <button type="button" class="btn btn-default" title="Saved search">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+              </button>
+                        </div>
+                    </div>
+                    <p class="text-right">Showing 3 of 300</p>
+                </div>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        <h5 class="list-group-item-heading">Peter Hasero</h5>
+                        <p class="list-group-item-text">Frontend Developer</p>
+                        <p class="list-group-item-text">Rating: 5</p>
+                        <br>
+
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <h5 class="list-group-item-heading">Candidate Name</h5>
+                        <p class="list-group-item-text">Candidate Position</p>
+                        <p class="list-group-item-text">Rating: 5</p>
+                        <br>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <h5 class="list-group-item-heading">Candidate Name</h5>
+                        <p class="list-group-item-text">Candidate Position</p>
+                        <p class="list-group-item-text">Rating: 5</p>
+                        <br>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="./assets/images/login.jpg" alt="" class="center-block img-circle img-responsive">
+                            </div>
+                            <div class="col-xs-12 col-sm-8 ">
+                                <h2 class="name">Peter Hasero</h2>
+                                <p><span class="glyphicon glyphicon-map-marker"></span> Hamburg, Germany <span class="label label-success tags" style="background-color: #00a6bc;">available</span></p>
+                                <p><strong>About: </strong> Frontend Develeper </p>
+                                <p><strong>Email: </strong> <a href="">peter@myskillsacademy.com</a> </p>
+                                <p><strong>Skills: </strong>
+                                    <span class="label label-info tags">html5</span>
+                                    <span class="label label-info tags">jade</span>
+                                    <span class="label label-info tags">css3</span>
+                                    <span class="label label-info tags">angular</span>
+                                    <span class="label label-info tags">js</span>
+                                    <span class="label label-info tags">bootstrap3</span>
+                                    <span class="label label-info tags">bower</span>
+                                </p>
+                                <p><strong>Last updated: </strong> 10-Sep-2026 </p>
+                                <p><strong>Added: </strong> 1-Jul-2020 </p>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4">
+                                <button class="btn btn-default btn-block">View Profile</button>
+                                <br>
+                                <br>
+
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+
+                                <button class="btn btn-success btn-block" style="background-color: #002235;">Recruit</button>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+
+                                <button type="button" class="btn btn-primary btn-block" style="background-color: #002235;">Resume</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p></p>
+                            <div class="col-xs-12 col-sm-12">
+                                <h5>Profile Summary</h5>
+                                <div class="jumbotron">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12">
+                                <h5>Experience, 2008 - 2016</h5>
+                                <div class="jumbotron">
+                                    <p></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
