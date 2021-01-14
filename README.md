@@ -1,2 +1,1 @@
-# MySkillsAcademy
-Prototype
+## Welcome to MySkillsAcademy
